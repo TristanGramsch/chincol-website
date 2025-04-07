@@ -465,49 +465,68 @@ nav a:hover::after {
 .contact {
     background-color: var(--gray-light);
     text-align: center;
+    padding: 5rem 0;
 }
 
 .contact-content {
-    display: flex;
-    gap: 3rem;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-.contact-info, .contact-form {
-    flex: 1;
-}
-
-.contact-info h3, .contact-form h3 {
+.contact-info h3 {
     color: var(--primary);
     margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.contact-details {
+    margin-bottom: 2rem;
 }
 
 .contact-info p {
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
+.contact-link {
+    color: var(--primary);
     font-weight: 500;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid var(--gray);
-    border-radius: 0.25rem;
-    outline: none;
-    transition: border-color 0.3s ease;
+.contact-link:hover {
+    color: var(--accent);
 }
 
-.form-group input:focus, .form-group textarea:focus {
-    border-color: var(--primary);
+.contact-cta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact-cta .btn {
+    padding: 0.85rem 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-note {
+    background-color: var(--gray-light);
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: var(--text-light);
 }
 
 /* Footer */
@@ -539,23 +558,10 @@ footer {
     filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
 }
 
-.footer-links ul {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.footer-links a {
-    color: var(--gray);
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--white);
-}
-
 .footer-info {
     opacity: 0.8;
     font-size: 0.9rem;
+    text-align: right;
 }
 
 /* Responsive Styles */
@@ -576,10 +582,6 @@ footer {
     .footer-logo {
         justify-content: center;
     }
-    
-    .footer-links ul {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 767px) {
@@ -597,5 +599,23 @@ footer {
     
     nav ul {
         display: none;
+    }
+    
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-info {
+        text-align: center;
     }
 }
