@@ -8,31 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-        var vapiInstance = null;
-        const assistant = "a99114c5-d825-48e6-a2eb-f2058c769725"; // Substitute with your assistant ID
-        const apiKey = "03c03896-96ce-483d-bd27-c223ae4c933f"; // Substitute with your Public key from Vapi Dashboard.
-        const buttonConfig = {}; // Modify this as required
-      
-        (function (d, t) {
-          var g = document.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-          g.src =
-            "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
-          g.defer = true;
-          g.async = true;
-          s.parentNode.insertBefore(g, s);
-      
-          g.onload = function () {
-            vapiInstance = window.vapiSDK.run({
-              apiKey: apiKey, // mandatory
-              assistant: assistant, // mandatory
-              config: buttonConfig, // optional
-            });
-          };
-        })(document, "script");
-    </script>
 </head>
 <body>
     <header>
@@ -117,40 +92,26 @@
     
     <section id="case-study" class="case-study">
         <div class="container">
-            <h2>ChatSR: 311 Service Request System</h2>
-            <p class="section-subtitle">A showcase of our project management capabilities for local government</p>
+            <h2>311 Virtual Assistant</h2>
+            <p class="section-subtitle">Our premier feature for modern local government</p>
             
             <div class="case-study-content">
                 <div class="case-study-text">
-                    <h3>What is ChatSR?</h3>
-                    <p>ChatSR is an innovative 311-style system designed for local government agencies. It allows citizens to easily report non-emergency issues using natural language processing to understand and route requests efficiently.</p>
+                    <h3>What is our 311 Virtual Assistant?</h3>
+                    <p>Our 311 Virtual Assistant is an innovative system designed specifically for local government agencies. It allows citizens to easily report non-emergency issues using advanced AI to understand and route requests efficiently.</p>
                     
                     <h3>Key Features</h3>
                     <ul>
                         <li>AI-powered natural language understanding</li>
-                        <li>Multi-channel support (web, mobile, SMS)</li>
                         <li>Real-time status updates</li>
                         <li>Automated routing to the right department</li>
                         <li>Analytics dashboard for city officials</li>
                     </ul>
                     
                     <div class="note">
-                        <p><strong>Note:</strong> ChatSR is a showcase project demonstrating our capabilities. <strong>Contact us to see a demo</strong> and learn how we can implement similar solutions for your needs.</p>
+                        <p><strong>Try our 311 Virtual Assistant now by calling:</strong> <a href="tel:+16189943611">+1 (618) 994-3611</a></p>
                         <div class="demo-cta">
-                            <a href="#contact" class="btn btn-primary">Request a Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="case-study-image">
-                    <div class="chat-demo">
-                        <div class="chat-message system">
-                            <p>Hello! I'm ChatSR. How can I help you today?</p>
-                        </div>
-                        <div class="chat-message user">
-                            <p>There's a pothole on Main Street that needs fixing.</p>
-                        </div>
-                        <div class="chat-message system">
-                            <p>I understand you want to report a pothole on Main Street. Can you provide more details about the location?</p>
+                            <a href="#contact" class="btn btn-primary">Request More Information</a>
                         </div>
                     </div>
                 </div>
