@@ -89,7 +89,7 @@
             </div>
         </div>
     </section>
-
+    
     <section id="case-study" class="case-study">
         <div class="container">
             <h2>ChatSR: 311 Service Request System</h2>
@@ -206,5 +206,30 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <script>
+        var vapiInstance = null;
+        const assistant = "a99114c5-d825-48e6-a2eb-f2058c769725"; // Substitute with your assistant ID
+        const apiKey = "03c03896-96ce-483d-bd27-c223ae4c933f"; // Substitute with your Public key from Vapi Dashboard.
+        const buttonConfig = {}; // Modify this as required
+      
+        (function (d, t) {
+          var g = document.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+          g.src =
+            "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+          g.defer = true;
+          g.async = true;
+          s.parentNode.insertBefore(g, s);
+      
+          g.onload = function () {
+            vapiInstance = window.vapiSDK.run({
+              apiKey: apiKey, // mandatory
+              assistant: assistant, // mandatory
+              config: buttonConfig, // optional
+            });
+          };
+        })(document, "script");
+    </script>
 </body>
 </html>

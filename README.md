@@ -18,7 +18,7 @@ This static website showcases Chincol LLC's services, approach, case studies, an
 
 - `index.html` - Main HTML file containing all content
 - `styles.css` - CSS styling for the entire website
-- `script.js` - Minimal JavaScript for form handling and smooth scrolling
+- `script.js` - Minimal JavaScript for smooth scrolling
 - `images/` - Directory containing website images and logo
 
 ## Getting Started
