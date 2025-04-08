@@ -42,7 +42,3 @@ To customize this website:
 1. Edit the `index.html` file to update content
 2. Modify `styles.css` to change the visual appearance
 3. Add additional images to the `images/` directory as needed
-
-## License
-
-Copyright © 2023 Chincol LLC. All rights reserved.
