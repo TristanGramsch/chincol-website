@@ -267,30 +267,87 @@ nav a:hover::after {
 .services {
     background-color: var(--white);
     text-align: center;
+    padding: 5rem 0;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+.services-layout {
+    display: flex;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
+}
+
+.services-main {
+    flex: 2;
+}
+
+.services-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .service-card {
     background-color: var(--gray-light);
-    padding: 2rem;
+    padding: 2.5rem;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    text-align: left;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .service-card h3 {
     color: var(--primary);
+    margin-bottom: 1.25rem;
+    font-size: 1.6rem;
+}
+
+.service-card.accent-left {
+    border-left: 4px solid var(--primary);
+    background-image: linear-gradient(to right, rgba(42, 67, 101, 0.03), rgba(247, 250, 252, 0.8));
+    padding: 3rem;
+}
+
+.service-card.accent-left .card-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.service-card.solution-card {
+    background-color: var(--gray-light);
+    border-top: 4px solid var(--accent);
+}
+
+.service-card.expertise-card {
+    background-color: var(--gray-light);
+    border-bottom: 4px solid var(--primary-light);
+}
+
+.card-icon {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-icon svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--primary);
+}
+
+.icon-analytics:before, .icon-solution:before, .icon-code:before {
+    content: "";
 }
 
 /* Approach Section */
@@ -438,6 +495,37 @@ nav a:hover::after {
     justify-content: center;
     border-left: 1px solid var(--gray);
     border-right: 1px solid var(--gray);
+    position: relative;
+}
+
+.award-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.medal-silver {
+    fill: #C0C0C0;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    stroke: #999;
+    stroke-width: 0.5;
+}
+
+.award-label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 10px;
+    margin-top: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
 }
 
 .portfolio-card:hover {
@@ -610,6 +698,10 @@ footer {
     
     .footer-info {
         text-align: center;
+    }
+    
+    .services-layout {
+        flex-direction: column;
     }
 }
 
