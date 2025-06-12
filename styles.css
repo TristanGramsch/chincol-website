@@ -331,6 +331,13 @@ nav a:hover::after {
     border-bottom: 4px solid var(--primary-light);
 }
 
+.services > .container > .service-card.expertise-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2rem;
+    box-sizing: border-box;
+}
+
 .card-icon {
     margin-bottom: 1.5rem;
     font-size: 2rem;
