@@ -575,6 +575,61 @@ nav a:hover::after {
     font-weight: bold;
 }
 
+.portfolio-card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.portfolio-card-content {
+    flex: 1;
+}
+
+.portfolio-card-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 160px;
+}
+
+.portfolio-link-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(42,67,101,0.08);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    border: none;
+    outline: none;
+}
+
+.portfolio-link-btn:hover {
+    background: linear-gradient(90deg, var(--accent) 60%, var(--primary) 100%);
+    color: var(--white);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(42,67,101,0.15);
+}
+
+.portfolio-grid-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-top: 2rem;
+}
+
+.portfolio-card-center {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* About Section */
 .about {
     background-color: var(--white);
